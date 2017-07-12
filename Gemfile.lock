@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/hitheyellowdog7/chance_view_tool
+  revision: 766379177eacb9c5399f67a6c4ca114d750cb05b
+  specs:
+    chance_view_tool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: b156edfee2b9629ad4751ee2a118a04f824ef9eb
   specs:
@@ -194,6 +200,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap!
   byebug
+  chance_view_tool!
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)

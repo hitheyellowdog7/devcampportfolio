@@ -15,4 +15,8 @@ module ApplicationHelper
             content_tag(:p, greeting, class: "source-greeting" )
         end
     end 
+
+  def copryright_generator
+    @copyright = ChanceViewTool::Renderer.copyright 'Chance McKean', 'All rights reserved'
+  end
 end
