@@ -57,4 +57,4 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 gem 'jquery-rails'
 
-gem 'chance_view_tool', git:  'https://github.com/hitheyellowdog7/chance_view_tool'
+gem 'chance_view_tool', '~> 0.1.0'
