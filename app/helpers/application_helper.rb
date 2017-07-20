@@ -16,7 +16,7 @@ module ApplicationHelper
         end
     end 
 
-  def copryright_generator
+  def copyright_generator
     @copyright = ChanceViewTool::Renderer.copyright 'Chance McKean', 'All rights reserved'
   end
 end
