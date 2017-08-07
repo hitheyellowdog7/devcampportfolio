@@ -27,15 +27,15 @@ ActiveRecord::Schema.define(version: 20170807154524) do
     t.index ["topic_id"], name: "index_blogs_on_topic_id"
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.text "content"
-    t.string "user"
-    t.string "references"
-    t.bigint "blog_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["blog_id"], name: "index_comments_on_blog_id"
-  end
+create_table "comments", force: :cascade do |t|
+   t.text     "content"
+   t.integer  "user_id"
+   t.integer  "blog_id"
+   t.datetime "created_at", null: false
+   t.datetime "updated_at", null: false
+   t.index ["blog_id"], name: "index_comments_on_blog_id", using: :btree
+   t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
+ end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
