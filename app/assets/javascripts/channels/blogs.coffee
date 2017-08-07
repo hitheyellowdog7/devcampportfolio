@@ -18,3 +18,5 @@ jQuery(document).on 'turbolink:load', ->
             App.global_chat.send_comment textarea.val(),
             comments.data('blog-id')
             textarea.val('')
+        e.preventDefault()
+        return false

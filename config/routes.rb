@@ -17,5 +17,7 @@ Rails.application.routes.draw do
     end
   end
   
+  moutn ActionCable.server => '/cable'
+  
   root to: 'pages#home'
 end
