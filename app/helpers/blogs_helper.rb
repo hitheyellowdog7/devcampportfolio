@@ -22,4 +22,12 @@ module BlogsHelper
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
     markdown_to_html.render(text).html_safe
   end
+  
+  def blog_status blog
+      if blog.draft? 
+        'file-text'
+      else blog.draft?   
+        'check'
+      end 
+  end
 end
