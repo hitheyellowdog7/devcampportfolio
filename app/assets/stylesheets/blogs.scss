@@ -2,10 +2,10 @@
 @import "font-awesome";
 @import "gritter";
 
+
 /*
  * Globals
  */
- 
 
 @media (min-width: 48em) {
   html {
@@ -160,9 +160,9 @@ h6, .h6 {
  */
 
 .blog-footer {
+  margin-top: 20px;
   padding: 2.5rem 0;
   color: #999;
-  margin-top: 20px;
   text-align: center;
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
@@ -172,8 +172,8 @@ h6, .h6 {
 }
 
 /*
-* Custom Styles
-*/
+ * Custom styles
+ */
 
 .social-links li {
   font-size: 2.5em;
@@ -190,4 +190,17 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
